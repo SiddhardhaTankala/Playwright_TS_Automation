@@ -1,7 +1,7 @@
 import {test, expect, request} from '@playwright/test';
 
 const loginPayLoad = {userEmail: "sid.tankala@gmail.com", userPassword: "Siddhu123#"};
-let token;
+let token: string;
 
 test.beforeAll( async () => {
 

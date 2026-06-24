@@ -236,3 +236,6 @@ Child window → new tab       → Promise.all + waitForEvent
 - npx playwright test --ui                    -> test runner to see the results with step by step executed
 - npx playwright test --debug                 -> playwright inspector to debug the test step by step - a default debug tool by playwright
 - npx playwright codegen <url>                -> to record and generate the test on a particualar url with code, assertions, and to convert into different scripts like java, pytest using target.
+
+- debug api code?
+- in package.json

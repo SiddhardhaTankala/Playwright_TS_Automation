@@ -4,7 +4,7 @@ export class LoginAPI {
 
     //
     private request: APIRequestContext;
-    private loginUrl: "https://rahulshettyacademy.com/api/ecom/user/login";
+    private loginUrl = "https://rahulshettyacademy.com/api/ecom/auth/login";
 
     //contructor
     constructor(request: APIRequestContext) {
@@ -16,8 +16,8 @@ export class LoginAPI {
 
             data:   {
                 userEmail: email,
-                userPassword: password
-            };
+                userPassword: password,
+            }
         });
 
         //assert status code
@@ -32,7 +32,7 @@ export class LoginAPI {
 
         console.log("Login Token:", responseBody.token);
         
-        //return toke for use in subsequest API calls
+        //return token for use in subsequest API calls
         return responseBody.token;
 
 

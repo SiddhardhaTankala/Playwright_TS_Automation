@@ -1,5 +1,5 @@
-import {test, expect} from '@playwright/test';
-let webContext;
+import {test, expect, BrowserContext} from '@playwright/test';
+let webContext: BrowserContext;
 
 //test('sample', async({browser})=>{
 test.beforeAll(async({browser}) => {

@@ -93,6 +93,10 @@ getByText options:
         await page.goto("URL");
     });
 
+## Capture screenshots, visual comparison
+- await page.screenshot({path: 'screenshotname.png', fullPage: true }); - full page
+- await page.locator(),screenshot({path: 'screenshotname.png'});    - screenshot for only specific locator or element
+- expect(await page.screenshot('current screenshot.png')).toMatchSnapshot('old screenshot.png');     //to take a screenshot of the login page after logout and compare it with the old screenshot to verify the UI is consistent.
 
 
 ## Wait Mechanisms
